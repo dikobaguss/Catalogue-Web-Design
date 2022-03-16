@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+.top-wrapper {
+  padding: 250px 0 250px 0;
+  background: linear-gradient(#3204fd00, #141414e6), url(https://images.unsplash.com/photo-1620196182713-89fee508ef8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-position: center;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+
+}
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+
+  }
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin: 7px 0px 3px 0px;
+  animation-name: moving;
+  animation-duration: 2s;
+  font-style: italic;
+}
+
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translate(0px);
+
+  }
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 30px 0;
+  animation-name: animasi_btn;
+  animation-duration: 2s;
+}
+
+
+
+
+@keyframes animasi_btn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+
+  }
+}
+
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.hub {
+  background-color: black;
+}
+
+.keranjang {
+  width: 25px;
+  padding-top: 18px;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #f4e1d2;
+  color: black;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.top {
+  background-color: white;
+}
+
+.top p {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -40px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-weight: bold;
+
+}
+
+.header-right a:hover {
+  background-color: #f4e1d2;
+  color: BLACK;
+}
+
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 30px;
+  padding: 25px 0;
+  visibility: hidden;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.lesson-icon:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* INI CSS BAGIAN FOOTER */
+
+.lesson-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f4e1d2;
+  text-align: center;
+}
+
+
+.content-footer {
+  float: left;
+  width: 25%;
+}
+
+
+.text-footer {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+
+
+.content-footer ul {
+  list-style: none;
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: black;
+  text-align: left;
+}
+
+.content-footer li {
+  padding-bottom: 5px;
+}
+
+.socialacc {
+  float: left;
+  display: block;
+  font-size: 20px;
+}
+
+.fa {
+  padding-right: 6px;
+}
+
+.content-footer a {
+  color: black;
+}
+
+.content-footer a:hover {
+  color: #15634b;
+  cursor: pointer;
+}
+
+.content-footer li:hover {
+  color: #15634b;
+  cursor: pointer;
+
+}
